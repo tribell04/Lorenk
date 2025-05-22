@@ -1,0 +1,141 @@
+/* Styling untuk Form Donasi */
+
+.donation-container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+.form-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Style untuk opsi nominal */
+.nominal-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+.nominal-option {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    min-width: 120px;
+    font-weight: 500;
+    flex: 1 1 calc(33.333% - 10px);
+}
+
+.nominal-option:hover {
+    border-color: #28a745;
+    background-color: #f8f9fa;
+}
+
+.nominal-option.active {
+    border-color: #28a745;
+    background-color: #28a745;
+    color: white;
+}
+
+
+/* Style untuk metode pembayaran */
+.payment-methods {
+    margin-bottom: 15px;
+}
+
+.payment-method {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.payment-method i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.payment-method:hover {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+}
+
+.payment-method.active {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style untuk detail pembayaran */
+.payment-detail-section {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.qr-img {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.bank-details {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.account-number {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.nominal-transfer {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #dc3545;
+}
+
+/* Style untuk tombol konfirmasi */
+.btn-konfirmasi {
+    padding: 12px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nominal-option, .payment-method {
+        margin-bottom: 10px;
+    }
+}
